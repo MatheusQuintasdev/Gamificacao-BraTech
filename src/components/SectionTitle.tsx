@@ -1,0 +1,2 @@
+interface Props{eyebrow?:string;title:string;description?:string;center?:boolean}
+export default function SectionTitle({eyebrow,title,description,center=false}:Props){return <div className={center?'mx-auto max-w-3xl text-center':'max-w-3xl'}>{eyebrow&&<p className="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600">{eyebrow}</p>}<h2 className="text-3xl font-black tracking-tight md:text-4xl">{title}</h2>{description&&<p className="mt-4 text-lg leading-8 text-slate-600">{description}</p>}</div>}
