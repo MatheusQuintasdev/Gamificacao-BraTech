@@ -261,3 +261,12 @@ https://github.com/lucas-duy
 **LinkedIn:**
 https://www.linkedin.com/in/lucas-jose-8903253b6/
 
+## 🎥 Vídeo de apresentação
+
+O vídeo apresenta o funcionamento da aplicação, suas principais páginas, funcionalidades e tecnologias utilizadas.
+
+**YouTube:**
+https://youtu.be/XNMRWeqh-hk
+
+---
+
