@@ -235,7 +235,7 @@ Projeto desenvolvido pelos alunos da turma **1TDSR — FIAP**.
 
 ### João Arthur Maia Almeida
 
-<img src="./public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
+<img src="./integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
 
 **RM:** 573458  
 **Turma:** 1TDSR  
@@ -250,7 +250,7 @@ https://www.linkedin.com/in/jo%C3%A3o-arthur-maia-almeida-927358401/
 
 ### Matheus Nogueira Quintas
 
-<img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
+<img src="./integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
 
 **RM:** 572542  
 **Turma:** 1TDSR  
@@ -265,7 +265,7 @@ https://www.linkedin.com/in/matheus-quintass
 
 ### Guilherme Ribeiro Matias
 
-<img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
+<img src="./integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
 
 **RM:** 573890  
 **Turma:** 1TDSR  
@@ -280,7 +280,7 @@ https://www.linkedin.com/in/guilherme-ribeiro-matias-030385349/
 
 ### Thiago Dias Gomes
 
-<img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
+<img src="./integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
 
 **RM:** 569675  
 **Turma:** 1TDSR  
@@ -295,7 +295,7 @@ https://www.linkedin.com/in/thiago-dias-a53429315/
 
 ### Lucas José Paolillo Vasconcelos
 
-<img src="./public/integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
+<img src="./integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
 
 **RM:** 565561  
 **Turma:** 1TDSR  
