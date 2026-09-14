@@ -12,16 +12,16 @@ Nesta Sprint, o projeto foi migrado para **React + Vite + TypeScript**, utilizan
 
 O projeto foi desenvolvido utilizando:
 
-- React
-- Vite
-- TypeScript
-- React Router DOM
-- React Hook Form
-- Tailwind CSS
-- HTML5
-- CSS3
-- Git
-- GitHub
+* React
+* Vite
+* TypeScript
+* React Router DOM
+* React Hook Form
+* Tailwind CSS
+* HTML5
+* CSS3
+* Git
+* GitHub
 
 ---
 
@@ -32,22 +32,14 @@ A aplicação está organizada da seguinte maneira:
 ```text
 Gamificacao-BraTech/
 │
-<<<<<<< HEAD
-├──  integrantes/
-=======
 ├── public/
 │   └── integrantes/
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
 │       ├── joao.jpg
 │       ├── matheus.jpg
 │       ├── guilherme.jpg
 │       ├── thiago.jpg
 │       └── lucas.jpg
 │
-<<<<<<< HEAD
-│   
-=======
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
 ├── src/
 │   ├── components/
 │   │   ├── AcaoCard.tsx
@@ -95,15 +87,11 @@ Gamificacao-BraTech/
 
 ### Organização
 
-- **components/** — componentes reutilizáveis da aplicação.
-- **data/** — dados utilizados pelas páginas e componentes.
-- **pages/** — páginas acessadas através das rotas da aplicação.
-- **types/** — interfaces e tipos utilizados pelo TypeScript.
-<<<<<<< HEAD
-- **integrantes/** — arquivos públicos e imagens utilizadas pelo projeto.
-=======
-- **public/** — arquivos públicos e imagens utilizadas pelo projeto.
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
+* **components/** — componentes reutilizáveis da aplicação.
+* **data/** — dados utilizados pelas páginas e componentes.
+* **pages/** — páginas acessadas através das rotas da aplicação.
+* **types/** — interfaces e tipos utilizados pelo TypeScript.
+* **public/** — arquivos públicos e imagens utilizadas pelo projeto.
 
 ---
 
@@ -153,18 +141,18 @@ Página apresentada quando o usuário tenta acessar uma rota inexistente.
 
 Entre as funcionalidades implementadas estão:
 
-- Navegação SPA com React Router DOM;
-- Rotas estáticas;
-- Rota dinâmica para os integrantes;
-- Componentes reutilizáveis;
-- Sistema demonstrativo de gamificação;
-- Sistema de pontuação;
-- Desafios sustentáveis;
-- Protótipo de avatar;
-- FAQ interativo;
-- Formulário com validação;
-- Página personalizada para rotas inexistentes;
-- Interface responsiva para diferentes tamanhos de tela.
+* Navegação SPA com React Router DOM;
+* Rotas estáticas;
+* Rota dinâmica para os integrantes;
+* Componentes reutilizáveis;
+* Sistema demonstrativo de gamificação;
+* Sistema de pontuação;
+* Desafios sustentáveis;
+* Protótipo de avatar;
+* FAQ interativo;
+* Formulário com validação;
+* Página personalizada para rotas inexistentes;
+* Interface responsiva para diferentes tamanhos de tela.
 
 ---
 
@@ -174,9 +162,9 @@ A interface foi desenvolvida utilizando **Tailwind CSS** e adaptada para diferen
 
 O projeto considera:
 
-- Mobile — até 480px;
-- Tablet — a partir de 768px;
-- Desktop — a partir de 992px.
+* Mobile — até 480px;
+* Tablet — a partir de 768px;
+* Desktop — a partir de 992px.
 
 ---
 
@@ -184,207 +172,4 @@ O projeto considera:
 
 ### Pré-requisitos
 
-Antes de executar o projeto, é necessário possuir o **Node.js** e o **npm** instalados.
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/MatheusQuintasdev/Gamificacao-BraTech.git
-```
-
-### 2. Entre na pasta do projeto
-
-```bash
-cd Gamificacao-BraTech
-```
-
-### 3. Instale as dependências
-
-```bash
-npm install
-```
-
-### 4. Execute o projeto
-
-```bash
-npm run dev
-```
-
-Após executar o comando, o Vite exibirá no terminal o endereço local da aplicação.
-
-Normalmente:
-
-```text
-http://localhost:5173/
-```
-
-Abra esse endereço no navegador para acessar o projeto.
-
----
-
-## 🔗 Repositório
-
-O código-fonte e o histórico de desenvolvimento estão disponíveis no GitHub:
-
-https://github.com/MatheusQuintasdev/Gamificacao-BraTech
-
----
-
-## 🎥 Vídeo de apresentação
-
-O vídeo apresenta o funcionamento da aplicação, suas principais páginas, funcionalidades e tecnologias utilizadas.
-
-**YouTube:**  
-<<<<<<< HEAD
-https://youtu.be/XNMRWeqh-hk
-=======
-`ADICIONAR_LINK_DO_VIDEO_AQUI`
-
-> O link será atualizado após a publicação do vídeo de apresentação no YouTube.
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
----
-
-## 👥 Autores e créditos
-
-Projeto desenvolvido pelos alunos da turma **1TDSR — FIAP**.
-
-### João Arthur Maia Almeida
-
-<<<<<<< HEAD
-<img src="./public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
-=======
-<img src="./public//public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-**RM:** 573458  
-**Turma:** 1TDSR  
-
-**GitHub:**  
-https://github.com/arthurmaia07
-
-**LinkedIn:**  
-https://www.linkedin.com/in/jo%C3%A3o-arthur-maia-almeida-927358401/
-
----
-
-### Matheus Nogueira Quintas
-
-<<<<<<< HEAD
-<img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
-=======
-<img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-**RM:** 572542  
-**Turma:** 1TDSR  
-
-**GitHub:**  
-https://github.com/MatheusQuintasdev
-
-**LinkedIn:**  
-https://www.linkedin.com/in/matheus-quintass
-
----
-
-### Guilherme Ribeiro Matias
-
-<<<<<<< HEAD
-<img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
-=======
-<img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-**RM:** 573890  
-**Turma:** 1TDSR  
-
-**GitHub:**  
-https://github.com/GuilhermeRibeiroMatias
-
-**LinkedIn:**  
-https://www.linkedin.com/in/guilherme-ribeiro-matias-030385349/
-
----
-
-### Thiago Dias Gomes
-
-<<<<<<< HEAD
-<img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
-=======
-<img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-**RM:** 569675  
-**Turma:** 1TDSR  
-
-**GitHub:**  
-https://github.com/douxz1
-
-**LinkedIn:**  
-https://www.linkedin.com/in/thiago-dias-a53429315/
-
----
-
-### Lucas José Paolillo Vasconcelos
-
-<<<<<<< HEAD
-<img src="./public//integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
-=======
-<img src="./public/integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-**RM:** 565561  
-**Turma:** 1TDSR  
-
-**GitHub:**  
-https://github.com/lucas-duy
-
-**LinkedIn:**  
-<<<<<<< HEAD
-https://www.linkedin.com/in/lucas-jose-8903253b6/
-=======
-`ADICIONAR_LINK_DO_LINKEDIN_DO_LUCAS`
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
----
-
-## 🖼️ Imagens e ícones do projeto
-
-<<<<<<< HEAD
-As imagens utilizadas pela aplicação estão armazenadas na pasta `integrantes`.
-=======
-As imagens utilizadas pela aplicação estão armazenadas na pasta `public`.
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-
-As fotos dos integrantes estão localizadas em:
-
-```text
-<<<<<<< HEAD
-integrantes/
-=======
-public/integrantes/
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
-```
-
-Outras imagens e elementos visuais utilizados no projeto fazem parte da identidade visual da solução BraTech e auxiliam na apresentação das funcionalidades da plataforma.
-
----
-
-## 📬 Contato
-
-Para entrar em contato com a equipe, utilize os perfis do **LinkedIn** e **GitHub** disponibilizados na seção de integrantes.
-
-Também é possível utilizar a página **Contato** disponível dentro da aplicação.
-
----
-
-## 📚 Challenge FIAP 2026
-
-Projeto acadêmico desenvolvido para o **Challenge 2026 — FIAP**, como parte da disciplina de **Front-End Design Engineering**.
-
-**Turma:** 1TDSR  
-<<<<<<< HEAD
-**Sprint:** 03
-=======
-**Sprint:** 03
->>>>>>> 9258e6c (ajustando readme e adicionando fotos)
+Antes de executar o projeto, é necessário possuir o **Node.js**
