@@ -173,3 +173,91 @@ O projeto considera:
 ### Pré-requisitos
 
 Antes de executar o projeto, é necessário possuir o **Node.js**
+
+## 👥 Autores e créditos
+
+Projeto desenvolvido pelos alunos da turma **1TDSR — FIAP**.
+
+### João Arthur Maia Almeida
+
+<p align="center">
+  <img src="./public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
+</p>
+
+**RM:** 573458
+**Turma:** 1TDSR
+
+**GitHub:**
+https://github.com/arthurmaia07
+
+**LinkedIn:**
+https://www.linkedin.com/in/jo%C3%A3o-arthur-maia-almeida-927358401/
+
+---
+
+### Matheus Nogueira Quintas
+
+<p align="center">
+  <img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
+</p>
+
+**RM:** 572542
+**Turma:** 1TDSR
+
+**GitHub:**
+https://github.com/MatheusQuintasdev
+
+**LinkedIn:**
+https://www.linkedin.com/in/matheus-quintass
+
+---
+
+### Guilherme Ribeiro Matias
+
+<p align="center">
+  <img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
+</p>
+
+**RM:** 573890
+**Turma:** 1TDSR
+
+**GitHub:**
+https://github.com/GuilhermeRibeiroMatias
+
+**LinkedIn:**
+https://www.linkedin.com/in/guilherme-ribeiro-matias-030385349/
+
+---
+
+### Thiago Dias Gomes
+
+<p align="center">
+  <img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
+</p>
+
+**RM:** 569675
+**Turma:** 1TDSR
+
+**GitHub:**
+https://github.com/douxz1
+
+**LinkedIn:**
+https://www.linkedin.com/in/thiago-dias-a53429315/
+
+---
+
+### Lucas José Paolillo Vasconcelos
+
+<p align="center">
+  <img src="./public/integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
+</p>
+
+**RM:** 565561
+**Turma:** 1TDSR
+
+**GitHub:**
+https://github.com/lucas-duy
+
+**LinkedIn:**
+https://www.linkedin.com/in/lucas-jose-8903253b6/
+
