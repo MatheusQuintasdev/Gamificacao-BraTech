@@ -252,9 +252,9 @@ Projeto desenvolvido pelos alunos da turma **1TDSR — FIAP**.
 ### João Arthur Maia Almeida
 
 <<<<<<< HEAD
-<img src="./integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
-=======
 <img src="./public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
+=======
+<img src="./public//public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
 >>>>>>> 9258e6c (ajustando readme e adicionando fotos)
 
 **RM:** 573458  
@@ -271,7 +271,7 @@ https://www.linkedin.com/in/jo%C3%A3o-arthur-maia-almeida-927358401/
 ### Matheus Nogueira Quintas
 
 <<<<<<< HEAD
-<img src="./integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
+<img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
 =======
 <img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
 >>>>>>> 9258e6c (ajustando readme e adicionando fotos)
@@ -290,7 +290,7 @@ https://www.linkedin.com/in/matheus-quintass
 ### Guilherme Ribeiro Matias
 
 <<<<<<< HEAD
-<img src="./integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
+<img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
 =======
 <img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
 >>>>>>> 9258e6c (ajustando readme e adicionando fotos)
@@ -309,7 +309,7 @@ https://www.linkedin.com/in/guilherme-ribeiro-matias-030385349/
 ### Thiago Dias Gomes
 
 <<<<<<< HEAD
-<img src="./integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
+<img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
 =======
 <img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
 >>>>>>> 9258e6c (ajustando readme e adicionando fotos)
@@ -328,7 +328,7 @@ https://www.linkedin.com/in/thiago-dias-a53429315/
 ### Lucas José Paolillo Vasconcelos
 
 <<<<<<< HEAD
-<img src="./integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
+<img src="./public//integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
 =======
 <img src="./public/integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
 >>>>>>> 9258e6c (ajustando readme e adicionando fotos)

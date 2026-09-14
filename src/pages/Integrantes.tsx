@@ -18,10 +18,6 @@ export default function Integrantes() {
         description="Integrantes da turma 1TDSR responsáveis pela evolução da solução no Challenge 2026."
       />
 
-      <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-        Observação para a entrega: substitua as iniciais pelas fotos reais dos
-        integrantes antes do envio final, pois a rubrica solicita foto.
-      </p>
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {integrantes.map((integrante) => (
