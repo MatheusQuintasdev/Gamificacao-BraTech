@@ -32,14 +32,14 @@ A aplicação está organizada da seguinte maneira:
 ```text
 Gamificacao-BraTech/
 │
-├── public/
-│   └── integrantes/
+├──  integrantes/
 │       ├── joao.jpg
 │       ├── matheus.jpg
 │       ├── guilherme.jpg
 │       ├── thiago.jpg
 │       └── lucas.jpg
 │
+│   
 ├── src/
 │   ├── components/
 │   │   ├── AcaoCard.tsx
@@ -223,9 +223,7 @@ https://github.com/MatheusQuintasdev/Gamificacao-BraTech
 O vídeo apresenta o funcionamento da aplicação, suas principais páginas, funcionalidades e tecnologias utilizadas.
 
 **YouTube:**  
-`ADICIONAR_LINK_DO_VIDEO_AQUI`
-
-> O link será atualizado após a publicação do vídeo de apresentação no YouTube.
+https://youtu.be/XNMRWeqh-hk
 
 ---
 
@@ -304,18 +302,18 @@ https://www.linkedin.com/in/thiago-dias-a53429315/
 https://github.com/lucas-duy
 
 **LinkedIn:**  
-`ADICIONAR_LINK_DO_LINKEDIN_DO_LUCAS`
+https://www.linkedin.com/in/lucas-jose-8903253b6/
 
 ---
 
 ## 🖼️ Imagens e ícones do projeto
 
-As imagens utilizadas pela aplicação estão armazenadas na pasta `public`.
+As imagens utilizadas pela aplicação estão armazenadas na pasta `integrantes`.
 
 As fotos dos integrantes estão localizadas em:
 
 ```text
-public/integrantes/
+integrantes/
 ```
 
 Outras imagens e elementos visuais utilizados no projeto fazem parte da identidade visual da solução BraTech e auxiliam na apresentação das funcionalidades da plataforma.
