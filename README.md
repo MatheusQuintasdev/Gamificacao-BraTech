@@ -91,7 +91,7 @@ Gamificacao-BraTech/
 - **data/** — dados utilizados pelas páginas e componentes.
 - **pages/** — páginas acessadas através das rotas da aplicação.
 - **types/** — interfaces e tipos utilizados pelo TypeScript.
-- **public/** — arquivos públicos e imagens utilizadas pelo projeto.
+- **integrantes/** — arquivos públicos e imagens utilizadas pelo projeto.
 
 ---
 
