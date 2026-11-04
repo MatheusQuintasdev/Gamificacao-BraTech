@@ -5,6 +5,7 @@ import Contato from './pages/Contato'
 import Faq from './pages/Faq'
 import Gamificacao from './pages/Gamificacao'
 import Home from './pages/Home'
+import PainelAcoes from './pages/PainelAcoes'
 import IntegranteDetalhe from './pages/IntegranteDetalhe'
 import Integrantes from './pages/Integrantes'
 import NotFound from './pages/NotFound'
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/gamificacao" element={<Gamificacao />} />
+        <Route path="/painel-acoes" element={<PainelAcoes />} />
         <Route path="/avatar" element={<Avatar />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contato" element={<Contato />} />
