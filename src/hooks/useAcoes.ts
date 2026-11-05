@@ -47,7 +47,7 @@ export function useAcoes() {
 
   async function salvar(dados: DadosAcao, id?: number) {
     if (!apiConfigurada) {
-      setErro('Ative a API Java no arquivo .env para salvar no banco de dados.')
+      setErro('Ative a API Java no arquivo .env para salvar no servidor Java.')
       return false
     }
 
@@ -72,7 +72,7 @@ export function useAcoes() {
 
   async function excluir(id: number) {
     if (!apiConfigurada) {
-      setErro('Ative a API Java no arquivo .env para excluir no banco de dados.')
+      setErro('Ative a API Java no arquivo .env para excluir no servidor Java.')
       return false
     }
 

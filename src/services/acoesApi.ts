@@ -1,7 +1,7 @@
 import type { AcaoSustentavel } from '../types'
 
-const enderecoBase = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
-const recurso = import.meta.env.VITE_API_ACOES_PATH || '/acoes'
+const enderecoBase = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '')
+const recurso = import.meta.env.VITE_API_ACOES_PATH || '/api/acoes'
 
 export const apiConfigurada = enderecoBase.length > 0
 
@@ -26,7 +26,16 @@ async function requisicao<T>(caminho: string, opcoes?: RequestInit): Promise<T> 
   }
 
   if (!resposta.ok) {
-    throw new Error(`A API retornou um erro HTTP ${resposta.status}.`)
+    let detalhe = ''
+
+    try {
+      const corpo = await resposta.json() as { erro?: string; detail?: string }
+      detalhe = corpo.erro || corpo.detail || ''
+    } catch {
+      // Algumas respostas HTTP não têm um corpo JSON.
+    }
+
+    throw new Error(detalhe || `A API retornou um erro HTTP ${resposta.status}.`)
   }
 
   if (resposta.status === 204) {
