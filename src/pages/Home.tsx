@@ -61,14 +61,14 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl">
             <div className="rounded-2xl bg-white p-6">
               <p className="text-sm font-bold text-brand-600">SEU IMPACTO</p>
-              <p className="mt-2 text-5xl font-black text-ink">230 pts</p>
+              <p className="mt-2 text-5xl font-black text-ink">4 ações</p>
 
               <div className="mt-5 h-3 overflow-hidden rounded-full bg-slate-100">
                 <div className="h-full w-3/4 rounded-full bg-brand-500" />
               </div>
 
               <p className="mt-3 text-sm text-slate-500">
-                Faltam 70 pontos para o próximo nível.
+                Acompanhe os desafios e consulte o painel de ações.
               </p>
             </div>
           </div>

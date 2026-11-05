@@ -21,7 +21,7 @@ function criarResposta(texto: string) {
     return 'Na demonstração de gamificação, cada ação sustentável concluída soma pontos ao seu progresso.'
   }
 
-  return 'Boa pergunta! Nesta Sprint o Avatar é um protótipo local, sem consumo de API. Posso falar sobre dicas, SoulUp e gamificação.'
+  return 'Boa pergunta! O Avatar é um protótipo local, sem IA externa. Posso falar sobre dicas, SoulUp e gamificação.'
 }
 
 export default function Avatar() {
@@ -76,7 +76,7 @@ export default function Avatar() {
       <SectionTitle
         eyebrow="Solução 02"
         title="Avatar Sustentável"
-        description="Protótipo navegável de uma conversa orientativa. Nesta Sprint ele funciona localmente, sem API, conforme as regras da disciplina."
+        description="Protótipo navegável de uma conversa orientativa. Demonstração de conversa orientativa que funciona localmente, independente da API Java de ações."
       />
 
       <div className="mt-10 overflow-hidden rounded-3xl border bg-white shadow-sm">
