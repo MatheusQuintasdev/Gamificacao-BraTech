@@ -1,272 +1,213 @@
-# 🌱 BraTech
+# 🌱 BraTech — Gamificação Sustentável
 
-Projeto desenvolvido para o **Challenge 2026 da FIAP**, pela turma **1TDSR**, com foco na criação de uma solução digital que utiliza conceitos de **gamificação e sustentabilidade**.
+Projeto acadêmico desenvolvido para o **Challenge 2026 da FIAP**, turma **1TDSR**, com o objetivo de incentivar práticas sustentáveis por meio de desafios, pontos e acompanhamento do progresso. A proposta é estimular a comunidade **SoulUp** a adotar hábitos mais conscientes no dia a dia.
 
-A proposta da BraTech é incentivar os usuários da comunidade **SoulUp** a adotarem ações mais sustentáveis por meio de desafios, pontuações, acompanhamento de progresso e elementos de gamificação.
+O Front-End foi desenvolvido como uma **Single Page Application (SPA)** utilizando React, TypeScript e Vite. Na Sprint 4, o projeto recebeu uma camada de integração com uma **API REST em Java**, responsável pelo cadastro e gerenciamento das ações sustentáveis.
 
-Nesta Sprint, o projeto foi migrado para **React + Vite + TypeScript**, utilizando uma arquitetura baseada em componentes e navegação no formato **SPA (Single Page Application)**.
+## 🔗 Links do projeto
 
----
+| Recurso | Link |
+| --- | --- |
+| Aplicação publicada (Vercel) | [Acessar BraTech](https://gamificacao-bra-tech.vercel.app/) |
+| Repositório do Front-End | [GitHub — Gamificacao-BraTech](https://github.com/MatheusQuintasdev/Gamificacao-BraTech) |
+| API Java (endpoint de ações) | [Render — `/api/acoes`](https://megafarma-api-kzze.onrender.com/api/acoes) |
+| Vídeo de apresentação | [Assistir no YouTube](https://youtu.be/0eNU3Pf3Mik) |
 
-## 🚀 Tecnologias utilizadas
+> **Observação:** os endereços são os disponibilizados pela equipe. A integração está implementada no código, mas a disponibilidade dos serviços e o funcionamento das operações em produção devem ser validados no ambiente publicado.
 
-O projeto foi desenvolvido utilizando:
+## 🎯 Sobre a solução
 
-* React
-* Vite
-* TypeScript
-* React Router DOM
-* React Hook Form
-* Tailwind CSS
-* HTML5
-* CSS3
-* Git
-* GitHub
+A BraTech propõe uma experiência de gamificação voltada à sustentabilidade. O usuário pode visualizar desafios e ações sustentáveis, marcar atividades como concluídas e acompanhar a quantidade de pontos acumulados.
 
----
+O sistema também possui um painel de gerenciamento das ações, com operações de consulta, cadastro, edição e exclusão por meio da API Java, além de páginas institucionais e uma apresentação dos integrantes.
+
+## ⚙️ Tecnologias utilizadas
+
+**Front-End**
+- React 18
+- TypeScript
+- Vite 5
+- React Router DOM
+- React Hook Form
+- Tailwind CSS
+- HTML5 e CSS3
+
+**Integração e publicação**
+- API REST em Java, disponibilizada no Render
+- Fetch API para requisições HTTP e comunicação em JSON
+- Vercel para o deploy do Front-End
+- Git e GitHub para versionamento
+
+## 🧩 Funcionalidades e páginas
+
+| Página | Rota | Descrição |
+| --- | --- | --- |
+| Início | `/` | Apresentação da BraTech e acesso às demais páginas |
+| Sobre | `/sobre` | Contexto e proposta do projeto |
+| Gamificação | `/gamificacao` | Ações sustentáveis, marcação de conclusão e cálculo dos pontos |
+| Painel de ações | `/painel-acoes` | Listagem, cadastro, edição e exclusão das ações via API |
+| Avatar | `/avatar` | Protótipo de experiência com avatar |
+| FAQ | `/faq` | Perguntas frequentes |
+| Contato | `/contato` | Formulário de contato com validação |
+| Integrantes | `/integrantes` | Apresentação da equipe |
+| Perfil do integrante | `/integrantes/:id` | Rota dinâmica com informações de cada integrante |
+| Não encontrada | `*` | Página exibida para rotas inexistentes |
+
+O acompanhamento de ações concluídas utiliza **Context API e `localStorage`**. Essa informação fica no navegador do usuário e **não é gravada pela API Java**.
 
 ## 📁 Estrutura de pastas
 
-A aplicação está organizada da seguinte maneira:
-
 ```text
 Gamificacao-BraTech/
-│
 ├── public/
-│   └── integrantes/
-│       ├── joao.jpg
-│       ├── matheus.jpg
-│       ├── guilherme.jpg
-│       ├── thiago.jpg
-│       └── lucas.jpg
-│
+│   └── integrantes/           # Fotos dos integrantes
 ├── src/
-│   ├── components/
-│   │   ├── AcaoCard.tsx
-│   │   ├── Button.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── IntegranteCard.tsx
-│   │   ├── Layout.tsx
-│   │   └── SectionTitle.tsx
-│   │
-│   ├── data/
-│   │   ├── acoes.ts
-│   │   └── integrantes.ts
-│   │
-│   ├── pages/
-│   │   ├── Avatar.tsx
-│   │   ├── Contato.tsx
-│   │   ├── Faq.tsx
-│   │   ├── Gamificacao.tsx
-│   │   ├── Home.tsx
-│   │   ├── IntegranteDetalhe.tsx
-│   │   ├── Integrantes.tsx
-│   │   ├── NotFound.tsx
-│   │   └── Sobre.tsx
-│   │
-│   ├── types/
-│   │   └── index.ts
-│   │
-│   ├── App.tsx
-│   ├── index.css
-│   └── main.tsx
-│
-├── .gitignore
+│   ├── components/            # Header, Footer, AcaoCard, AcaoForm e outros
+│   ├── context/               # Contexto de ações concluídas
+│   ├── data/                  # Catálogo local e dados da equipe
+│   ├── hooks/                 # useAcoes: carregamento e operações CRUD
+│   ├── pages/                 # Páginas e rotas da aplicação
+│   ├── services/              # acoesApi.ts: comunicação HTTP com a API
+│   ├── types/                 # Interfaces TypeScript
+│   ├── App.tsx                # Configuração das rotas
+│   ├── main.tsx               # Entrada da aplicação
+│   ├── index.css              # Estilos globais
+│   └── vite-env.d.ts          # Tipos das variáveis do Vite
+├── .env.example               # Exemplo de variáveis de ambiente
+├── INTEGRACAO_JAVA.md         # Orientações complementares da integração
 ├── index.html
 ├── package.json
 ├── package-lock.json
-├── postcss.config.js
 ├── tailwind.config.js
 ├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
+├── vercel.json                 # Configuração de publicação
 ├── vite.config.ts
 └── README.md
 ```
 
-### Organização
+O repositório também conserva arquivos HTML/CSS/JavaScript de versões anteriores, além da aplicação atual em React na pasta `src/`.
 
-* **components/** — componentes reutilizáveis da aplicação.
-* **data/** — dados utilizados pelas páginas e componentes.
-* **pages/** — páginas acessadas através das rotas da aplicação.
-* **types/** — interfaces e tipos utilizados pelo TypeScript.
-* **public/** — arquivos públicos e imagens utilizadas pelo projeto.
+## 💻 Como executar localmente
 
----
+**Pré-requisito:** Node.js com npm instalado.
 
-## 🖥️ Páginas da aplicação
+1. Clone o repositório:
 
-A aplicação possui as seguintes páginas:
+   ```bash
+   git clone https://github.com/MatheusQuintasdev/Gamificacao-BraTech.git
+   cd Gamificacao-BraTech
+   ```
 
-### Home
+2. Instale as dependências:
 
-Página inicial da BraTech, apresentando a proposta principal da solução e permitindo a navegação para as demais áreas da aplicação.
+   ```bash
+   npm ci
+   ```
 
-### Sobre
+3. Crie um arquivo `.env.local` na raiz do projeto com as variáveis de integração:
 
-Apresenta informações sobre a BraTech e a proposta desenvolvida para o Challenge.
+   ```env
+   VITE_API_URL=https://megafarma-api-kzze.onrender.com
+   VITE_API_ACOES_PATH=/api/acoes
+   ```
 
-### Gamificação
+   O endereço base deve ficar **sem** `/api/acoes` ao final, pois o caminho já está definido na segunda variável. Alternativamente, copie `.env.example` e atualize o endereço.
 
-Apresenta as ações sustentáveis e o sistema de pontuação utilizado para incentivar a participação dos usuários.
+4. Inicie o servidor de desenvolvimento:
 
-### Avatar
+   ```bash
+   npm run dev
+   ```
 
-Protótipo de personalização e evolução do avatar do usuário conforme sua participação nas atividades sustentáveis.
+5. Acesse a URL local mostrada no terminal (normalmente `http://localhost:5173`).
 
-### FAQ
+**Comandos adicionais**
 
-Página de perguntas frequentes sobre a solução e seu funcionamento.
+```bash
+npm run build     # Verifica TypeScript e gera a versão de produção em dist/
+npm run preview   # Abre uma prévia local da versão gerada
+```
 
-### Contato
+Sem `VITE_API_URL`, a aplicação utiliza ações locais de demonstração. Nesse modo, as operações de cadastro, edição e exclusão pela API ficam indisponíveis.
 
-Formulário de contato desenvolvido utilizando **React Hook Form**, TypeScript e validação dos campos.
+## 🔌 Integração com a API Java
 
-### Integrantes
+**Endpoint publicado:** `https://megafarma-api-kzze.onrender.com/api/acoes`
 
-Apresenta os integrantes responsáveis pelo desenvolvimento do projeto.
+O serviço Front-End (`src/services/acoesApi.ts`) utiliza requisições HTTP para as seguintes operações:
 
-### Perfil do integrante
+| Método | Endpoint | Finalidade |
+| --- | --- | --- |
+| GET | `/api/acoes` | Listar ações sustentáveis |
+| POST | `/api/acoes` | Cadastrar uma ação |
+| PUT | `/api/acoes/{id}` | Atualizar uma ação pelo ID |
+| DELETE | `/api/acoes/{id}` | Excluir uma ação pelo ID |
 
-Página acessada através de uma **rota dinâmica**, exibindo informações específicas do integrante selecionado.
+### Contrato de dados
 
-### Página 404
+O Front-End trabalha com o seguinte formato de ação sustentável:
 
-Página apresentada quando o usuário tenta acessar uma rota inexistente.
+```json
+{
+  "id": 1,
+  "titulo": "Separar recicláveis",
+  "descricao": "Separar os resíduos recicláveis para descarte adequado.",
+  "pontos": 40,
+  "categoria": "Reciclagem"
+}
+```
 
----
+Os valores acima são **ilustrativos**. Para cadastro e atualização, o Front-End envia `titulo`, `descricao`, `pontos` e `categoria`; o `id` é utilizado para identificar registros existentes.
 
-## 🧩 Principais funcionalidades
+A URL base é definida por `VITE_API_URL`, e a rota, por `VITE_API_ACOES_PATH`. O hook `src/hooks/useAcoes.ts` controla carregamento, erros e operações CRUD. O painel (`/painel-acoes`) utiliza essas funções para gerenciar os registros.
 
-Entre as funcionalidades implementadas estão:
+### Limitações conhecidas
 
-* Navegação SPA com React Router DOM;
-* Rotas estáticas;
-* Rota dinâmica para os integrantes;
-* Componentes reutilizáveis;
-* Sistema demonstrativo de gamificação;
-* Sistema de pontuação;
-* Desafios sustentáveis;
-* Protótipo de avatar;
-* FAQ interativo;
-* Formulário com validação;
-* Página personalizada para rotas inexistentes;
-* Interface responsiva para diferentes tamanhos de tela.
+- Na versão Java recebida, os registros são **mantidos em memória**: reiniciar o servidor pode restaurar os dados iniciais e descartar alterações realizadas.
+- A conclusão individual de desafios e a pontuação do usuário são controladas localmente no navegador, não persistidas no backend.
+- Como o CRUD da API não possui autenticação na versão analisada, ele deve ser usado com dados de demonstração e não para armazenar informações sensíveis.
+- O funcionamento completo de GET, POST, PUT e DELETE no site publicado depende da disponibilidade do serviço no Render e da configuração de acesso entre os domínios (CORS).
 
----
+## ☁️ Deploy
 
-## 📱 Responsividade
+O **Front-End** está publicado na [Vercel](https://gamificacao-bra-tech.vercel.app/) e o endpoint da **API Java** foi disponibilizado no [Render](https://megafarma-api-kzze.onrender.com/api/acoes).
 
-A interface foi desenvolvida utilizando **Tailwind CSS** e adaptada para diferentes tamanhos de tela.
+Na Vercel, em **Project → Settings → Environment Variables**, configure no ambiente **Production**:
 
-O projeto considera:
+| Variável | Valor |
+| --- | --- |
+| `VITE_API_URL` | `https://megafarma-api-kzze.onrender.com` |
+| `VITE_API_ACOES_PATH` | `/api/acoes` |
 
-* Mobile — até 480px;
-* Tablet — a partir de 768px;
-* Desktop — a partir de 992px.
+Após cadastrar ou alterar essas variáveis, é necessário fazer um **novo deploy**, pois o Vite as utiliza durante a compilação. Variáveis que começam com `VITE_` ficam acessíveis no navegador, portanto não devem conter senhas nem segredos.
 
----
+## ✅ Testes recomendados
 
-## ⚙️ Como executar o projeto
-
-### Pré-requisitos
-
-Antes de executar o projeto, é necessário possuir o **Node.js**
-
-## 👥 Autores e créditos
-
-Projeto desenvolvido pelos alunos da turma **1TDSR — FIAP**.
-
-### João Arthur Maia Almeida
-
-<p align="center">
-  <img src="./public/integrantes/joao.jpg" width="150" alt="Foto de João Arthur Maia Almeida">
-</p>
-
-**RM:** 573458
-**Turma:** 1TDSR
-
-**GitHub:**
-https://github.com/arthurmaia07
-
-**LinkedIn:**
-https://www.linkedin.com/in/jo%C3%A3o-arthur-maia-almeida-927358401/
-
----
-
-### Matheus Nogueira Quintas
-
-<p align="center">
-  <img src="./public/integrantes/matheus.jpg" width="150" alt="Foto de Matheus Nogueira Quintas">
-</p>
-
-**RM:** 572542
-**Turma:** 1TDSR
-
-**GitHub:**
-https://github.com/MatheusQuintasdev
-
-**LinkedIn:**
-https://www.linkedin.com/in/matheus-quintass
-
----
-
-### Guilherme Ribeiro Matias
-
-<p align="center">
-  <img src="./public/integrantes/guilherme.jpg" width="150" alt="Foto de Guilherme Ribeiro Matias">
-</p>
-
-**RM:** 573890
-**Turma:** 1TDSR
-
-**GitHub:**
-https://github.com/GuilhermeRibeiroMatias
-
-**LinkedIn:**
-https://www.linkedin.com/in/guilherme-ribeiro-matias-030385349/
-
----
-
-### Thiago Dias Gomes
-
-<p align="center">
-  <img src="./public/integrantes/thiago.jpg" width="150" alt="Foto de Thiago Dias Gomes">
-</p>
-
-**RM:** 569675
-**Turma:** 1TDSR
-
-**GitHub:**
-https://github.com/douxz1
-
-**LinkedIn:**
-https://www.linkedin.com/in/thiago-dias-a53429315/
-
----
-
-### Lucas José Paolillo Vasconcelos
-
-<p align="center">
-  <img src="./public/integrantes/lucas.jpg" width="150" alt="Foto de Lucas José Paolillo Vasconcelos">
-</p>
-
-**RM:** 565561
-**Turma:** 1TDSR
-
-**GitHub:**
-https://github.com/lucas-duy
-
-**LinkedIn:**
-https://www.linkedin.com/in/lucas-jose-8903253b6/
+1. Executar `npm run build` e conferir a compilação.
+2. Abrir `/gamificacao` e verificar o carregamento das ações.
+3. Marcar uma ação como concluída e verificar os pontos e a persistência local após atualizar a página.
+4. Abrir `/painel-acoes` e testar listagem, cadastro, edição e exclusão com dados de demonstração.
+5. Verificar as páginas no celular e no desktop.
+6. Validar o site publicado, incluindo eventuais erros de rede ou CORS no console do navegador.
+
+## 👥 Integrantes e créditos
+
+**FIAP — Turma 1TDSR**
+
+| Integrante | Registro acadêmico |
+| --- | --- |
+| Lucas José Paolillo Vasconcelos | RM 565561 |
+| Thiago Dias Gomes | RM 569675 |
+| Matheus Nogueira Quintas | RM 572542 |
+| João Arthur Maia | RM 573458 |
+| Guilherme Ribeiro | RM 573890 |
+
+As fotos dos integrantes estão em `public/integrantes/`, e suas informações aparecem na página de integrantes do projeto.
 
 ## 🎥 Vídeo de apresentação
 
-O vídeo apresenta o funcionamento da aplicação, suas principais páginas, funcionalidades e tecnologias utilizadas.
-
-**YouTube:**
-https://youtu.be/XNMRWeqh-hk
+Assista à [apresentação da BraTech no YouTube](https://youtu.be/0eNU3Pf3Mik).
 
 ---
 
+**Projeto acadêmico — FIAP | Challenge 2026 | Sprint 4**
