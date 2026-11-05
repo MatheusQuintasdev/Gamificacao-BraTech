@@ -3,7 +3,13 @@ import type { FormEvent } from 'react'
 import type { AcaoSustentavel } from '../types'
 import type { DadosAcao } from '../hooks/useAcoes'
 
-type Categoria = AcaoSustentavel['categoria']
+const categorias = [
+  { valor: 'ENERGIA', nome: 'Energia' },
+  { valor: 'RECICLAGEM', nome: 'Reciclagem' },
+  { valor: 'MOBILIDADE', nome: 'Mobilidade' },
+  { valor: 'CONSUMO', nome: 'Consumo' },
+  { valor: 'ÁGUA', nome: 'Água' },
+]
 
 interface Props {
   selecionada: AcaoSustentavel | null
@@ -17,14 +23,14 @@ const campo = 'mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:bo
 export default function AcaoForm({ selecionada, salvando, onSalvar, onCancelar }: Props) {
   const [titulo, setTitulo] = useState('')
   const [descricao, setDescricao] = useState('')
-  const [categoria, setCategoria] = useState<Categoria>('Energia')
+  const [categoria, setCategoria] = useState('ENERGIA')
   const [pontos, setPontos] = useState(20)
   const [validacao, setValidacao] = useState('')
 
   useEffect(() => {
     setTitulo(selecionada?.titulo || '')
     setDescricao(selecionada?.descricao || '')
-    setCategoria(selecionada?.categoria || 'Energia')
+    setCategoria(selecionada?.categoria || 'ENERGIA')
     setPontos(selecionada?.pontos || 20)
     setValidacao('')
   }, [selecionada])
@@ -74,11 +80,13 @@ export default function AcaoForm({ selecionada, salvando, onSalvar, onCancelar }
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="categoria" className="font-semibold">Categoria</label>
-          <select id="categoria" value={categoria} onChange={(evento) => setCategoria(evento.target.value as Categoria)} className={campo}>
-            <option>Energia</option>
-            <option>Resíduos</option>
-            <option>Mobilidade</option>
-            <option>Consumo</option>
+          <select id="categoria" value={categoria} onChange={(evento) => setCategoria(evento.target.value)} className={campo}>
+            {selecionada && !categorias.some((item) => item.valor === categoria) && (
+              <option value={categoria}>{categoria}</option>
+            )}
+            {categorias.map((item) => (
+              <option key={item.valor} value={item.valor}>{item.nome}</option>
+            ))}
           </select>
         </div>
         <div>
