@@ -17,12 +17,17 @@ export default function IntegranteCard({
 
   return (
     <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div
-        className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-100 text-2xl font-black text-brand-600"
-        aria-label={`Foto não cadastrada de ${integrante.nome}`}
-      >
-        {iniciais}
-      </div>
+      {integrante.foto ? (
+        <img
+          src={integrante.foto}
+          alt={`Foto de ${integrante.nome}`}
+          className="h-20 w-20 rounded-full object-cover"
+        />
+      ) : (
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-100 text-2xl font-black text-brand-600">
+          {iniciais}
+        </div>
+      )}
 
       <h3 className="mt-5 text-xl font-bold">{integrante.nome}</h3>
 
